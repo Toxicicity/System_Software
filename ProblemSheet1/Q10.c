@@ -1,3 +1,14 @@
+/* 
+========================================================================================
+Name : Q10.c
+Author: Subham Sourav
+Description : Write a program to open a file with read write mode, write 10 bytes, move the file pointer by 10
+bytes (use lseek) and write again 10 bytes.
+a. check the return value of lseek
+b. open the file with od and check the empty spaces in between the data.
+Date : 25-08-2024
+========================================================================================
+*/
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -48,3 +59,8 @@ int main() {
     return 0;
 }
 
+/*
+$ cc Q10.c
+subham@subham-GF75:~/ProblemSheet1$ ./a.out
+lseek returned offset: 30
+*/

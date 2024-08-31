@@ -1,3 +1,11 @@
+/* 
+========================================================================================
+Name : Q6.c
+Author: Subham Sourav
+Description : Write a program to take input from STDIN and display on STDOUT. Use only read/write system calls
+Date : 22-08-2024
+========================================================================================
+*/
 #include <stdio.h>
 #include <unistd.h>
 
@@ -25,3 +33,11 @@ int main() {
     return 0;
 }
 
+
+  /*  Sample Execution:
+
+
+$ cc Q6.c
+subham@subham-GF75:~/ProblemSheet1$ ./a.out
+                     
+*/

@@ -1,4 +1,12 @@
-
+/* 
+========================================================================================
+Name : Q5.c
+Author: Subham Sourav
+Description : Write a program to create five new files with infinite loop. Execute the program in the background
+and check the file descriptor table at /proc/pid/fd.
+Date : 22-08-2024
+========================================================================================
+*/
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -30,3 +38,15 @@ int main() {
     return 0;
 }
 
+
+/*
+    Sample Execution:
+
+$ cc Q5.c
+subham@subham-GF75:~/ProblemSheet1$ ./a.out
+File file100.txt opened with descriptor 3
+File file200.txt opened with descriptor 4
+File file300.txt opened with descriptor 5
+File file400.txt opened with descriptor 6
+File file500.txt opened with descriptor 7
+*/

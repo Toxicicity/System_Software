@@ -1,3 +1,21 @@
+/* 
+========================================================================================
+Name : Q9.c
+Author: Subham Sourav
+Description : Write a program to print the following information about a given file.
+a. inode
+b. number of hard links
+c. uid
+d. gid
+e. size
+f. block size
+g. number of blocks
+h. time of last access
+i. time of last modification
+j. time of last change
+Date : 25-08-2024
+========================================================================================
+*/
 #include <stdio.h>
 #include <sys/stat.h>
 #include <time.h>
@@ -29,3 +47,8 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+/*
+$ cc Q9.c
+subham@subham-GF75:~/ProblemSheet1$ ./a.out
+Usage: ./a.out <file_name>
+*/

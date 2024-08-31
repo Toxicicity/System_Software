@@ -1,10 +1,17 @@
+/* 
+========================================================================================
+Name : Q3.c
+Author: Subham Sourav
+Description : Write a program to create a file and print the file descriptor value. Use creat ( ) system call.
+Date : 20-08-2024
+========================================================================================
+*/
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
 
 int main() {
-    // File path and permission
-    // New file will be created in present directory
+   
     const char *f_path = "NewFile3.txt";
     int f_permissions = 0644; // Owner can read/write, others can read
 
@@ -26,3 +33,10 @@ int main() {
     return 0;
 }
 
+/*
+    Sample Execution:
+
+$ cc Q3.c
+subham@subham-GF75:~/ProblemSheet1$ ./a.out
+File desc: 3
+*/

@@ -1,3 +1,14 @@
+/*
+========================================================================================
+Name : Q16b.c
+Author: Subham Sourav
+Description : Write a program to perform mandatory locking.
+a. Implement write lock
+b. Implement read lock
+Date : 28-08-2024
+========================================================================================
+*/
+
 #include <stdio.h>
 
 #include <unistd.h>
@@ -22,7 +33,7 @@ void lock_file(int fd, int lock_type) {
 
 int main() {
     int fd;
-    const char *filename = "example.txt";
+    const char *filename = "NewFile3.txt";
 
     // Open the file for reading and writing
     fd = open(filename, O_RDWR);
@@ -49,3 +60,11 @@ int main() {
     return 0;
 }
 
+/*
+$ cc Q16b.c
+subham@subham-GF75:~/ProblemSheet1$ ./a.out
+File locked successfully.
+File contents: This is a write lock test.
+
+Holding read lock. Press Enter to release lock and exit.
+*/

@@ -1,3 +1,11 @@
+/* 
+========================================================================================
+Name : Q4.c
+Author: Subham Sourav
+Description : Write a program to open an existing file with read write mode. Try O_EXCL flag also.
+Date : 21-08-2024
+========================================================================================
+*/
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -31,4 +39,13 @@ int main() {
 
     return 0;
 }
+
+/*
+    Sample Execution:
+
+$ cc Q4.c
+subham@subham-GF75:~/ProblemSheet1$ ./a.out
+File opened successfully with descriptor: 3
+Wrote 8 bytes to the file.
+*/
 

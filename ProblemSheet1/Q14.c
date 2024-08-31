@@ -1,3 +1,14 @@
+/* 
+========================================================================================
+Name : Q14.c
+Author: Subham Sourav
+Description : Write a program to find the type of a file.
+a. Input should be taken from command line.
+b. program should be able to identify any type of a file.
+Date : 28-08-2024
+========================================================================================
+*/
+
 #include <stdio.h>
 #include <sys/stat.h>
 #include <stdlib.h>
@@ -43,3 +54,10 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
+/*
+$ cc Q14.c
+subham@subham-GF75:~/ProblemSheet1$ ./a.out
+Usage: ./a.out <file_path>
+subham@subham-GF75:~/ProblemSheet1$ ./a.out NewFile3.txt 
+This is a regular file.
+*/

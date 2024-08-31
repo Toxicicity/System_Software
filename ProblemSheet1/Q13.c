@@ -1,3 +1,12 @@
+/* 
+========================================================================================
+Name : Q13.c
+Author: Subham Sourav
+Description : Write a program to wait for a STDIN for 10 seconds using select. Write a proper print statement to
+verify whether the data is available within 10 seconds or not (check in $man 2 select)
+Date : 27-08-2024
+========================================================================================
+*/
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/select.h>
@@ -43,3 +52,11 @@ int main() {
     return 0;
 }
 
+
+/*
+$ cc Q13.c
+subham@subham-GF75:~/ProblemSheet1$ ./a.out
+Waiting for input on STDIN for 10 seconds 
+hdhdh
+Data received: hdhdh
+*/

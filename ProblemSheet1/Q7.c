@@ -1,3 +1,11 @@
+/* 
+========================================================================================
+Name : Q7.c
+Author: Subham Sourav
+Description : Write a program to copy file1 into file2 ($cp file1 file2).
+Date : 23-08-2024
+========================================================================================
+*/
 #include<unistd.h>
 #include<errno.h>
 #include<fcntl.h>
@@ -26,3 +34,10 @@ int main(int argc, char* argv[])
 	}
 	return 0;	
 }
+
+ /*  Sample Execution:
+$ cc Q7.c
+subham@subham-GF75:~/ProblemSheet1$ ./a.out
+program: Bad address
+                     
+*/

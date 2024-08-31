@@ -1,3 +1,16 @@
+/* 
+========================================================================================
+Name : Q11c.c
+Author: Subham Sourav
+Description : Write a program to open a file, duplicate the file descriptor and append the file with both the
+descriptors and check whether the file is updated properly or not.
+a. use dup
+b. use dup2
+c. use fcntl
+Date : 26-08-2024
+========================================================================================
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -35,3 +48,8 @@ int main() {
     return 0;
 }
 
+/*
+$ cc Q11c.c
+subham@subham-GF75:~/ProblemSheet1$ ./a.out
+
+*/

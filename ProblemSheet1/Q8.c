@@ -1,3 +1,12 @@
+/* 
+========================================================================================
+Name : Q8.c
+Author: Subham Sourav
+Description : Write a program to open a file in read only mode, read line by line and display each line as it is read.
+Close the file when end of file is reached.
+Date : 24-08-2024
+========================================================================================
+*/
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -34,4 +43,10 @@ int main() {
     close(fd);
     return 0;
 }
+
+/*  Sample Execution:
+ cc Q8.c
+subham@subham-GF75:~/ProblemSheet1$ ./a.out
+                     
+*/
 
